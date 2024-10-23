@@ -1,0 +1,86 @@
+<!-- Introduction
+This file serves as a reference for key concepts I learn about HTML5, 
+allowing me to easily access the information whenever needed.
+
+Credits Due To: FreeCodeCamp
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Use <link> element inside <head> to link CSS stylesheet to webpage.-->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!--
+    The <main> element makes HTML easier to read, and helps with SEO and accessibility.
+      |It is used to represent the main content of the body. Content inside <main> should be
+      |unique to the document and not repeated. 
+    -->
+    <main> </main>
+    <div> 
+        <div> Heading Element </div>
+        <!-- Ordered <h1> to <h6>, lower importance with descending order.
+            * <h1> is the most important
+            * <h6> is the least important
+        -->
+
+        <h1>This is h1 element. The most important heading element. Only use one h1 element per page. </h1>
+        <h6>This is h6 element. This is the least important heading element.</h6>
+    </div>
+
+    <div>
+        <!-- 
+        Use <img> to add images to website. The <img> element does not have a 
+          |closing tag, such elements are known as "void elements".-->
+        
+         <img>
+
+        <!-- HTML attributes are special words used inside the opening tag to 
+         control an element's behavior
+            * src="" attribute specifies the image's URL.
+            * alt="" attribute is a text-based description of the image for the webpage to fallback on
+                |if the image does not load. This is important for improving accessibility to
+                |screen readers. EVERY IMAGE SHOULD HAVE AN ALT ATTRIBUTE.
+         -->
+
+         <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"> 
+    </div>
+
+    <div>
+        <!-- 
+        Anchor Elements <a> is used to link to another page.
+            * href attribute : (hypertext reference) specifies the URL of that the link points to.
+            * target attribute : specifies where to open the linked document/URL
+                > target="_self" : opens link in the same browser (DEFAULT)
+                > target="_blank" : opens linked document on new tab or window
+                > target="_parent" : opens in the parent frame, if using frames or iframes. behaves like "_self" if no parent.
+                > target="_top" : opens link in full body of the window, breaking out any frames or iframes.
+            * rel attribute. (relationship attribute) : define relationship between current and linked document.
+                > "noopener" : prevents new page from accessing the window.opener object. Blocks new page from controlling original window.
+                > "noreferrer" : hides original (referring) page's URL from new page
+                > "no follow" : tells search engine not to follow link for SEO purposes. Used for untrusted or user-generated links (like blog comments).
+                > "alternate" : indicates that linked document is an alternative version of current (e.g., alternative language or format)
+                > "stylesheet" : specifies resource is a CSS stylesheet
+                > "author" : points to URL of author's webpage of profile 
+                > "icon" : used to specify favicon
+                > "license" : links to the license for the content of the page
+        -->
+
+            <a class="invisible" href="" target="" rel="">You Can Place A Link's Text Between Opening and Closing Tags</a>
+
+            <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p> <!-- Usage: Turn text into link inside of <p> element.-->
+            
+            <a>
+                <img src="">   <!-- Usage: Turns the image into a link. -->
+            </a>
+    </div>
+    
+    
+
+    
+</body>
+</html>
